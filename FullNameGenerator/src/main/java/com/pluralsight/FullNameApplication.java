@@ -27,6 +27,8 @@ public class FullNameApplication {
         String suffix = scanner.nextLine().trim();
 
 
+
+
         //compute the unknown
 
         String fullName = "";
