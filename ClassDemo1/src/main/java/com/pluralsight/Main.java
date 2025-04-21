@@ -57,7 +57,10 @@ public class Main {
 
     /// define display person method. public static void because it is a method
     public static void displayPerson(Person person){
-        System.out.printf("Person %s is a %s and is %d years old", person.getFullName(), person.getProfession(), person.getAge());
+        System.out.printf("Person %s is a %s and is %d years old\n",
+                person.getFullName(),
+                person.getProfession(),
+                person.getAge());
 
     }
 
