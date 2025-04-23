@@ -9,6 +9,13 @@ public class CellPhoneApplication {
 
         CellPhone phone = new CellPhone();
 
+        CellPhone secondPhone = new CellPhone(12395322, "iphone", "ATT", "3472349847", "Chris");
+
+         secondPhone.display();
+
+
+
+
         System.out.println("serial number: ");
         phone.setSerialNumber(Integer.parseInt((scanner.nextLine())));
 

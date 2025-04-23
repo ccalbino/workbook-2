@@ -18,6 +18,22 @@ public class CellPhone {
 
     }
 
+    //overloading: create new constructor in same class with the same name. method is recieveing var
+    public CellPhone(int serialNumber, String model, String carrier, String phoneNumber, String owner) {
+        this.serialNumber = serialNumber;
+        this.model = model;
+        this.carrier = carrier;
+        this.phoneNumber = phoneNumber;
+        this.owner = owner;
+
+    }
+
+
+
+    public void display(){
+        System.out.println( serialNumber + model + carrier + phoneNumber + owner);
+    }
+
 
     //Getter
     public int getSerialNumber() {
@@ -61,6 +77,7 @@ public class CellPhone {
     public void setOwner(String owner) {
         this.owner = owner;
     }
+
 
 
 }

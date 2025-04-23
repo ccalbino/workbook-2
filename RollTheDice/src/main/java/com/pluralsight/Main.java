@@ -3,6 +3,8 @@ package com.pluralsight;
 public class Main {
     public static void main(String[] args) {
 
+
+        //an instance of Dice calles dice
         Dice dice = new Dice();
 
         int roll1;
@@ -11,6 +13,7 @@ public class Main {
         int numof4 = 0;
         int numof6 = 0;
         int numof7 = 0;
+
 
         for (int rollNumber = 1; rollNumber <= 100; rollNumber++) {
             roll1 = dice.roll();
