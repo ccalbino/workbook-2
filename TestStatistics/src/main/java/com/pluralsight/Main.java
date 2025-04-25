@@ -9,26 +9,34 @@ public class Main {
 
 
         //for each loop to find max
-        for (int i = 0; i < testScores.length; i++ ) {
-            if (testScores[i] > max){
-                max = testScores[i];
+//        for (int i = 0; i < testScores.length; i++ ) {
+//            if (testScores[i] > max){
+//                max = testScores[i];
+//
+//            }
+//            System.out.println(max);
+//        }
 
+
+        //for each loop to find avg
+        for (int num : testScores){
+            sum = sum + num;
+        }
+        double average = (double) sum / testScores.length;
+
+        System.out.println("Average is : " + average);
+
+
+        int highest = 0;
+        for (int i = 0; i < testScores.length; i++ ) {
+            if (testScores[i] > highest){
+                highest = testScores[i];
             }
-            System.out.println(max);
+        }
+        System.out.println("The highest value is: " + highest);
+
+
         }
 
 
-//        //for each loop to find avg
-//        for (int num : testScores){
-//            sum = sum + num;
-//        }
-//        double average = (double) sum / testScores.length;
-//
-//        System.out.println("Average is : " + average);
-//
-//
-//        }
-
-
     }
-}
